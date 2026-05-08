@@ -37,6 +37,10 @@ highlights:
 
 **선행 기법과의 비교.** 기존 GAN 기반 cross-modality translation은 학습 과정의 특성상 mode collapse, 비수렴, 불안정성 문제가 빈번했습니다. Denoising Diffusion Probabilistic Model (DDPM) 계열은 noise-perturbation 학습 과정 덕분에 더 안정적이고 다양한 출력을 생성하며, 영상 합성 task에서 GAN보다 우수함이 보고되었습니다.
 
+**손실 함수.** Latent space와 conditioning key $\mathbf{y}$, diffusion time step $t$ 를 함께 고려한 LDM의 noise prediction loss는 다음과 같이 정의됩니다.
+
+![LDM noise prediction loss](slide-architecture.png)
+
 #### 결과
 
 Held-out test set에서 합성 T1w 영상이 다음 성능을 달성했습니다.
