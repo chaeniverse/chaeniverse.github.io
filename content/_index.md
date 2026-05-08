@@ -2,130 +2,255 @@
 # Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2022-10-24
+date: 2026-01-05
 type: landing
 
-design:
-  # Default section spacing
-  spacing: '6rem'
-
 sections:
-  - block: resume-biography-3
+  # Developer Hero - Gradient background with name, role, social, and CTAs
+  - block: dev-hero
+    id: hero
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      greeting: "Hi, I'm"
+      show_status: true
+      show_scroll_indicator: true
+      typewriter:
+        enable: true
+        prefix: "I work on"
+        strings:
+          - "data-driven decisions"
+          - "insights from messy real-world data"
+          - "evaluation of generative AI"
+        type_speed: 70
+        delete_speed: 40
+        pause_time: 2500
+      cta_buttons:
+        - text: View My Work
+          url: "#projects"
+          icon: arrow-down
+        - text: Get In Touch
+          url: "#contact"
+          icon: envelope
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
+      style: centered
+      avatar_shape: circle
+      animations: true
       background:
-        gradient_mesh:
-          enable: true
-
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
-  - block: markdown
+        color:
+          light: "#fafafa"
+          dark: "#0a0a0f"
+      spacing:
+        padding: ["6rem", "0", "4rem", "0"]
+  
+  # Filterable Portfolio - Alpine.js powered project filtering
+  - block: portfolio
+    id: projects
     content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+      title: "Featured Projects"
+      subtitle: "A selection of my recent work"
+      count: 0
+      filters:
+        folders:
+          - projects
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Machine Learning
+          tag: Machine Learning
+        - name: Deep Learning
+          tag: Deep Learning
+        - name: Big Data Analysis
+          tag: Big Data Analysis
+      default_button_index: 0
+      # Archive link auto-shown if more projects exist than 'count' above
+      # archive:
+      #   enable: false  # Set to false to explicitly hide
+      #   text: "Browse All"  # Customize text
+      #   link: "/work/"  # Custom URL
+    design:
+      columns: 3
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+  
+  # Visual Tech Stack - Icons organized by category
+  - block: tech-stack
+    id: skills
+    content:
+      title: "Tech Stack"
+      subtitle: "Tools and methods I work with"
+      categories:
+        - name: Languages
+          items:
+            - name: Python
+              icon: devicon/python
+            - name: R
+              icon: devicon/r
+            - name: SQL
+              icon: devicon/postgresql
+            - name: SAS
+              icon: custom/sas
+        - name: Libraries
+          items:
+            - name: scikit-learn
+              icon: devicon/scikitlearn
+            - name: PyTorch
+              icon: devicon/pytorch
+            - name: pandas
+              icon: devicon/pandas
+            - name: NumPy
+              icon: devicon/numpy
+        - name: Tools
+          items:
+            - name: Jupyter
+              icon: devicon/jupyter
+            - name: RStudio
+              icon: devicon/rstudio
+            - name: VS Code
+              icon: devicon/vscode
+            - name: Shiny
+              icon: custom/shiny
+            - name: Tableau
+              icon: custom/tableau
+            - name: Git
+              icon: devicon/git
+            - name: Linux
+              icon: devicon/linux
+            - name: GitHub
+              icon: brands/github
+            - name: Notion
+              icon: devicon/notion
+            - name: Slack
+              icon: devicon/slack
+    design:
+      style: grid
+      show_levels: false
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+  
+  # Experience Timeline
+  - block: resume-experience
+    id: experience
+    content:
+      title: Experience
+      date_format: Jan 2006
+      items:
+        - title: Senior Software Engineer
+          company: Tech Corp
+          company_url: ''
+          company_logo: ''
+          location: San Francisco, CA
+          date_start: '2023-01-01'
+          date_end: ''
+          description: |2-
+            * Lead development of microservices architecture serving 1M+ users
+            * Improved API response time by 40% through optimization
+            * Mentored team of 5 junior developers
+            * Tech stack: React, Node.js, PostgreSQL, AWS
+        - title: Full-Stack Developer
+          company: Startup Inc
+          company_url: ''
+          company_logo: ''
+          location: Remote
+          date_start: '2021-06-01'
+          date_end: '2022-12-31'
+          description: |2-
+            * Built and deployed 3 production applications from scratch
+            * Implemented CI/CD pipeline reducing deployment time by 60%
+            * Collaborated with design team on UI/UX improvements
+            * Tech stack: Next.js, Express, MongoDB, Docker
+        - title: Junior Developer
+          company: Web Agency
+          company_url: ''
+          company_logo: ''
+          location: New York, NY
+          date_start: '2020-01-01'
+          date_end: '2021-05-31'
+          description: |2-
+            * Developed client websites using modern web technologies
+            * Maintained and updated legacy codebases
+            * Participated in code reviews and agile ceremonies
+            * Tech stack: React, WordPress, PHP, MySQL
     design:
       columns: '1'
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+  
+  # Recent Blog Posts
   - block: collection
-    id: papers
+    id: blog
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
+      title: Recent Posts
+      subtitle: '통계, 머신러닝, 연구 노트'
       text: ''
       filters:
         folders:
-          - publications
+          - blog
         exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
+      count: 3
       order: desc
     design:
-      # Choose a layout view
       view: card
-      # Reduce spacing
+      columns: 3
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
       spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
+        padding: ["4rem", "0", "4rem", "0"]
+  
+  # Contact Section
+  - block: contact-info
+    id: contact
     content:
-      title: 👉 Build your own academic website like this
+      title: Get In Touch
+      subtitle: "Let's build something amazing together"
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
+        I'm always interested in hearing about new projects and opportunities.
+        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
+      email: alex@example.com
+      autolink: true
+    design:
+      columns: '1'
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+  
+  # CTA Card
+  - block: cta-card
+    content:
+      title: "Open to Opportunities"
+      text: |-
+        I'm currently looking for **senior engineering** or **tech lead** roles.
+        
+        Let's connect and discuss how I can help your team.
       button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        text: 'Download Resume'
+        url: uploads/resume.pdf
+        new_tab: true
     design:
       card:
-        # Card background color (CSS class)
-        css_class: 'bg-primary-300 dark:bg-primary-700'
-        css_style: ''
+        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
+        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
+        text_color: dark
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "6rem", "0"]
 ---

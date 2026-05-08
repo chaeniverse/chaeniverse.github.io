@@ -2,115 +2,83 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+  display: Chaehyeon Lee
+  given: Chaehyeon
+  family: Lee
+  alternate: '이채현'
+  pronunciation: ''
+  pronouns: she/her
+postnominals: []
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: ''
+role: Data Scientist
+email: chaehyun3253@gmail.com
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  Data Scientist at PIPET, The Catholic University of Korea.
+  Healthcare big data · generative AI evaluation ·
+  K-pop virtual idol app (chatbot persona design, prompt engineering,
+  LLM model comparison, image generation). Python · R · SQL · LLMs.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: PIPET, The Catholic University of Korea
+    url: https://www.catholic.ac.kr/
+  - name: 가톨릭대학교 약리학교실 빅데이터팀 데이터사이언티스트
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:chaehyun3253@gmail.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://github.com/chaeniverse
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Statistical evaluation of generative AI / LLMs
+  - Large-scale real-world data analysis
+  - Causal inference and survival analysis
+  - LLM applications and audience analytics
+  - K-pop and entertainment data
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: MS in Statistics
+    institution: Inha University
+    start: 2021-03-01
+    end: 2023-02-28
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      수업 조교 (Teaching Assistant) — 프로그래밍 언어, 자료구조, 기초통계1, 데이터 사이언스 개론, 객체지향 프로그래밍, 통계분석방법·데이터 마이닝.
+
+      연구 분야: 머신러닝, 신경과학 (Neuroscience).
+  - degree: BS in Statistics
+    institution: Inha University
+    start: 2016-03-01
+    end: 2021-02-28
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Data Scientist
+    org: 빅데이터팀, 가톨릭대학교 (PIPET)
+    start: 2024-02-01
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      의료 빅데이터 기반 통계·머신러닝 모델 구축. SQL·Python·R로 데이터 추출,
+      전처리, 분석, 모델링, 결과 해석 및 의사결정 지원까지 담당.
+  - role: Data Analyst
+    org: 의학통계지원센터, 인하대병원
+    start: 2023-02-01
+    end: 2023-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      다양한 임상 진료과 연구진과 협업해 통계 컨설팅 및 데이터 분석 지원.
+      SAS·R·SPSS로 연구 디자인 자문, 데이터 정제, 통계 모델링,
+      결과 해석 및 논문 통계 분석 지원까지 담당.
+      재직 기간 중 통계 분석 21건, R 통계 교육 8건 수행.
 
 skills:
   - name: Technical Skills
     items:
+      - label: R
+        level: 4
       - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
         level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
+      - label: SAS
         level: 4
-      - label: Grant Proposals
+      - label: SPSS
         level: 4
-
-languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+      - label: SQL
+        level: 4
