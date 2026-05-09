@@ -45,7 +45,7 @@ R과 Python을 활용해 편두통 환자군 데이터 분석을 수행하였습
 
 **예측 모델링.** 편두통의 발병 횟수라는 임상학적 지표를 예측하기 위해 머신러닝 기법을 도입했습니다. 구체적으로, least absolute shrinkage and selection operator (LASSO)를 적용해 영상 피처들을 추출하고, 5-겹 중첩 교차 검증을 갖는 선형 회귀식으로 예측 모형을 구축했습니다. 내부 훈련 데이터 세트에서 성별과 나이를 보정한 후, intra class correlation (ICC)와 mean absolute error (MAE)를 기준으로 모델을 선출하고, 최종적으로 외부 검정 데이터 세트의 임상적 변수들을 예측했습니다. 피실험자들을 뽑는 과정에서 편향이 생기지 않도록 이 과정을 100회 반복했습니다. 예측 정확도는 실제 값과 예측 값 사이의 스피어만 상관 계수, ICC, MAE를 계산해 평가했고, 상관계수의 유의성은 비모수 순열 검정을 기반으로 결정했습니다.
 
-![Selected feature probability and prediction performance for headache frequency and disease duration](fig3.jpg)
+![Selected feature probability and prediction performance for headache frequency](fig3.jpg)
 
 #### 성과
 

@@ -30,6 +30,8 @@ links:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/chaeniverse
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/%EC%B1%84%ED%98%84-%EC%9D%B4-65a65221b/
 
 interests:
   - Statistical evaluation of generative AI / LLMs
@@ -82,3 +84,11 @@ skills:
         level: 4
       - label: SQL
         level: 4
+
+languages:
+  - name: English
+    level: 4
+    label: TOEIC Speaking IH · TOEFL 88
+  - name: Korean
+    level: 5
+    label: Native

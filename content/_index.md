@@ -28,6 +28,9 @@ sections:
         - text: View My Work
           url: "#projects"
           icon: arrow-down
+        - text: Download CV
+          url: /uploads/resume.pdf
+          icon: arrow-down-tray
         - text: Get In Touch
           url: "#contact"
           icon: envelope
@@ -61,6 +64,8 @@ sections:
           tag: Deep Learning
         - name: Big Data Analysis
           tag: Big Data Analysis
+        - name: Service/App
+          tag: Service/App
       default_button_index: 0
       # Archive link auto-shown if more projects exist than 'count' above
       # archive:
@@ -187,6 +192,21 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
   
+  # Languages
+  - block: resume-languages
+    id: languages
+    content:
+      title: "Languages"
+      subtitle: ""
+      username: me
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
   # Recent Blog Posts
   - block: collection
     id: blog
@@ -219,7 +239,7 @@ sections:
       text: |-
         I'm always interested in hearing about new projects and opportunities.
         Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+      email: chaehyun3253@gmail.com
       autolink: true
     design:
       columns: '1'
@@ -229,28 +249,4 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
-  - block: cta-card
-    content:
-      title: "Open to Opportunities"
-      text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
-      button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
-        new_tab: true
-    design:
-      card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
-        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
-        text_color: dark
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "6rem", "0"]
 ---
