@@ -5,7 +5,7 @@
 <title>Chaehyeon Lee — Data Scientist Portfolio</title>
 <style>
   @page {
-    size: A4;
+    size: 210mm 256mm;
     margin: 10mm 12mm 10mm 12mm;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,6 +27,11 @@
     margin: 6px 0 2px 0;
     padding-bottom: 1.5px;
     border-bottom: 1.2px solid #4f46e5;
+  }
+  h2 .hint {
+    font-size: 7.5pt; font-weight: 500;
+    text-transform: none; letter-spacing: 0;
+    margin-left: 8px; color: #4f46e5; opacity: 0.85;
   }
   h3 {
     font-size: 10pt; font-weight: 700; color: #111827;
@@ -141,33 +146,33 @@
   </div>
 </div>
 
-<h2>Selected Projects</h2>
+<h2>Selected Projects <span class="hint">★ 프로젝트 제목 클릭 시 상세 페이지로 이동</span></h2>
 
 <div class="proj-cluster">
   <div class="proj-cluster-title">LLM / AI Agent · 생성형 AI 파이프라인 (K-Pop 가상 아이돌 앱)</div>
   <ul class="proj-list">
     <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-llm-benchmark/">LLM Model Benchmark</a></strong> — EQ-Bench 리더보드 기반 후보 선정 → 프리미엄/경량 Top 5 비교 + 비용 시뮬레이션. MBTI priming + 도메인 큐레이션 질문으로 응답 품질 평가. <span class="small">[<a href="https://github.com/chaeniverse/LLM-bench">chaeniverse/LLM-bench</a>]</span></li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-mbti/">MBTI Persona Priming</a></strong> — arXiv 논문 framework 검토 + 16Personalities 60문항 / 7점 Likert / 15회 반복으로 LLM persona 일관성 검증 흐름 설계. <span class="small">[<a href="https://github.com/chaeniverse/LLM-bench">chaeniverse/LLM-bench</a>]</span></li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-casting-image/">Casting</a> & <a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-content-generation/">Content</a> Image Generation</strong> — 연습생 / 콘텐츠 컷 prompt grid 격자 + 약 4천장 생성·정성 검수. Reference-image conditioning + negative constraints로 정체성 일관성 확보. <span class="small">[<a href="https://github.com/chaeniverse/kpop-image-experiments">chaeniverse/kpop-image-experiments</a>]</span></li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-opt2i/">OPT2I + DSG</a></strong> — Mañas et al. 2024 (arXiv:2403.17804) iterative prompt refinement 알고리즘 구현, DSG (Davidsonian Scene Graph) atomic VQA 채점으로 prompt-image alignment 정량 비교. <span class="small">[<a href="https://github.com/chaeniverse/opt2i-dsg">chaeniverse/opt2i-dsg</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-mbti/">MBTI Persona Priming</a></strong> — arXiv 논문 framework 검토 + 16Personalities 60문항 / 7점 Likert / 15회 반복으로 LLM persona 일관성 검증 흐름 설계.</li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-casting-image/">Casting</a> & <a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-content-generation/">Content</a> Image Generation</strong> — 두 단계 (연습생 캐스팅 ~800장, 콘텐츠 scene ~3,200장) 각각 prompt 변수 조합 격자로 생성·정성 검수. Reference-image conditioning + negative constraints로 정체성 일관성 확보. <span class="small">[<a href="https://github.com/chaeniverse/kpop-image-experiments">chaeniverse/kpop-image-experiments</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/kpop-virtual-idol-opt2i/">OPT2I + DSG</a></strong> — Mañas et al. 2024 (arXiv:2403.17804) iterative prompt refinement 알고리즘 구현. DSG (Davidsonian Scene Graph) 로 prompt를 작은 질문들로 쪼개 VQA 채점 — 이미지가 prompt를 얼마나 잘 반영했는지 숫자로 평가. <span class="small">[<a href="https://github.com/chaeniverse/opt2i-dsg">chaeniverse/opt2i-dsg</a>]</span></li>
   </ul>
 </div>
 
 <div class="proj-cluster">
   <div class="proj-cluster-title">Healthcare Big Data · ML</div>
   <ul class="proj-list">
-    <li><strong><a href="https://chaeniverse.github.io/projects/mm-precursor-survival/">Improved Survival in MM with Early Precursor Detection</a></strong> — HIRA 약 5천만명 코호트, MGUS/SMM/de novo MM 정의·추출 + IPTW + Marginal Cox 회귀로 사전 진단의 생존 향상 효과 입증. <span class="accent">Blood Cancer Journal (IF 11.6, 2025).</span></li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/mm-opioid-longterm/">Long-term Opioid Use in MM</a></strong> — HIRA 3,621명 코호트 (1저자), baseline risk score 모형 + 저/중/고위험군 stratification. submit 준비 중.</li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/ovarisk-ml/">OvaRisk-ML</a></strong> — 5종 ML 모델 (RF, LR, XGBoost, CatBoost, MLP) + RFE + Bayesian HPO + Bayes-rule 보정으로 난소암 위험군 분류. <strong>Python Shiny 앱 배포</strong>로 lifetime risk cumulative incidence 출력. Review 중. <span class="small">[<a href="https://chaehyun3253.shinyapps.io/my-app/">Shiny App</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/mm-precursor-survival/">Improved Survival in MM with Early Precursor Detection</a></strong> — HIRA 약 5천만명 코호트, MGUS/SMM/de novo MM 정의·추출 + IPTW + Marginal Cox 회귀로 사전 진단의 생존 향상 효과 입증. <span class="accent">Blood Cancer Journal (IF 11.6, 2025).</span> <span class="small">[<a href="https://github.com/chaeniverse/mm-precursor-survival">chaeniverse/mm-precursor-survival</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/mm-opioid-longterm/">Long-term Opioid Use in MM</a></strong> — HIRA 약 5천만명 코호트에서 신규 진단 MM 환자 3,621명 정의·추출, baseline risk score 모형 + 저/중/고위험군 stratification. submit 준비 중 (1저자).</li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/ovarisk-ml/">OvaRisk-ML</a></strong> — 5종 ML 모델 (RF, LR, XGBoost, CatBoost, MLP) + RFE + Bayesian HPO + Bayes-rule 보정으로 난소암 위험군 분류. <strong>Python Shiny 앱 배포</strong>로 lifetime risk cumulative incidence 출력. Review 중. <span class="small">[<a href="https://github.com/chaeniverse/OvaRisk-ML">chaeniverse/OvaRisk-ML</a>] [<a href="https://chaehyun3253.shinyapps.io/my-app/">Shiny App</a>]</span></li>
   </ul>
 </div>
 
 <div class="proj-cluster">
   <div class="proj-cluster-title">Generative AI · Medical Imaging</div>
   <ul class="proj-list">
-    <li><strong><a href="https://chaeniverse.github.io/projects/ppmi-cwdm-progression/">Future DaTScan Synthesis with cWDM</a></strong> — 초기 DaTScan 한 장으로 2년 후 영상을 합성하는 conditional wavelet diffusion 프레임워크. PPMI 746쌍 종단 데이터. <span class="accent">한국통계학회 1저자 포스터.</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/ppmi-cwdm-progression/">Future DaTScan Synthesis with cWDM</a></strong> — 초기 DaTScan 한 장으로 2년 후 영상을 합성하는 conditional wavelet diffusion 프레임워크. PPMI 746쌍 종단 데이터. <span class="accent">한국통계학회 1저자 포스터.</span> <span class="small">[<a href="https://github.com/chaeniverse/cwdm">chaeniverse/cwdm</a>]</span></li>
     <li><strong><a href="https://chaeniverse.github.io/projects/neonatal-brain-diffusion/">Cross-Modality Neonatal Brain Image Conversion</a></strong> — 신생아 뇌 T2w → T1w 합성 latent diffusion model. <span class="accent">IEEE AIxMHC 2025 oral (공동 교신저자).</span></li>
-    <li><strong><a href="https://chaeniverse.github.io/projects/migraine-functional-gradients/">Whole-Brain Functional Gradients in Migraine</a></strong> — 비선형 매니폴드 러닝으로 편두통 뇌 기능 정량화. <span class="accent">Human Brain Mapping (IF 4.7, 2023, 1저자).</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/migraine-functional-gradients/">Whole-Brain Functional Gradients in Migraine</a></strong> — 비선형 매니폴드 러닝으로 편두통 뇌 기능 정량화. <span class="accent">Human Brain Mapping (IF 4.7, 2023, 1저자).</span> <span class="small">[<a href="https://github.com/chaeniverse/migraine_project">chaeniverse/migraine_project</a>]</span></li>
   </ul>
 </div>
 

@@ -20,9 +20,6 @@ links:
   - type: github
     url: https://github.com/spcl/MBTI-in-Thoughts
     label: Reference Code
-  - type: github
-    url: https://github.com/chaeniverse/LLM-bench
-    label: Implementation
 featured: true
 status: "Completed"
 role: "분석·설계 담당"
@@ -130,6 +127,5 @@ description 은 MBTI 공식 문헌 (*Myers and Myers, 1980, "Gifts Differing"*) 
 
 - *Psychologically Enhanced AI Agents* — [arXiv:2509.04343](https://arxiv.org/pdf/2509.04343)
 - Reference code — [`spcl/MBTI-in-Thoughts`](https://github.com/spcl/MBTI-in-Thoughts)
-- Implementation — [`chaeniverse/LLM-bench`](https://github.com/chaeniverse/LLM-bench) (priming 검증 노트북)
 - Myers, I. B., & Myers, P. B. (1980). *Gifts Differing: Understanding Personality Type*.
 - 16Personalities 공식 설문 (60문항, 7점 Likert)
