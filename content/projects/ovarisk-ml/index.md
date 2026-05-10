@@ -1,7 +1,7 @@
 ---
 title: "OvaRisk-ML: Ovarian Cancer Risk Classification with Machine Learning"
 date: 2026-04-01
-summary: "5종의 머신러닝 모델로 난소암 위험군을 분류하는 예측 시스템. RFE 기반 변수 선택, Bayesian hyperparameter optimization, undersampling Bayes 보정을 적용. Python Shiny 앱으로 배포해 lifetime risk cumulative incidence 출력. 논문 review 중."
+summary: "5종 ML 모델로 난소암 위험군을 분류하는 예측 시스템 (Review 중)."
 tags:
   - Machine Learning
 tech_stack:
@@ -23,10 +23,7 @@ status: "Under Review"
 role: "공저자"
 duration: "2025–2026"
 highlights:
-  - "5종 ML 모델 비교 (Random Forest, Logistic Regression, XGBoost, CatBoost, MLP)"
-  - "RFE + 5-fold stratified CV로 변수 선택, Bayesian optimization으로 하이퍼파라미터 튜닝"
-  - "Bayes rule 기반 undersampling 보정으로 클래스 불균형 처리"
-  - "Python Shiny 앱으로 위험군 분류 + lifetime risk cumulative incidence plot 배포"
+  - "5종 ML 모델로 난소암 위험군을 분류하는 예측 시스템"
 ---
 
 #### 개요

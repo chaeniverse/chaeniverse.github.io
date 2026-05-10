@@ -1,9 +1,9 @@
 ---
 title: "Customer Satisfaction Index Modeling with SEM (Amos)"
 date: 2023-06-14
-summary: "병원 서비스 혁신팀의 의뢰로 설문지 데이터에 구조방정식(SEM)을 적용해 고객 서비스 품질의 잠재 구조를 모형화하고, 표준화 회귀 계수 기반 고객만족지수(CSI)를 산출한 컨설팅 프로젝트. 인하대병원 의학통계지원센터에서 수행."
+summary: "병원 서비스 품질을 구조방정식(SEM)으로 모형화해 고객만족지수(CSI)를 산출한 컨설팅 프로젝트."
 tags:
-  - Service/App
+  - App/Service
   - Statistical Analysis
   - Survey Analysis
   - SEM
@@ -18,10 +18,7 @@ status: "Completed"
 role: "통계 분석가 (의학통계지원센터 컨설팅)"
 duration: "2023.05 – 2023.06"
 highlights:
-  - "병원 서비스 혁신팀 의뢰의 통계 컨설팅 — 설문지 데이터에 SEM 적용"
-  - "다지표(multi-indicator) 측정 모형으로 잠재변수(서비스 품질 차원) 추정"
-  - "모형 적합도 + 수렴 타당성(개념신뢰도, 분산추출지수)으로 측정 모형 진단"
-  - "표준화 회귀 계수 + 가중치 셀 기반 고객만족지수(CSI) 산출"
+  - "병원 서비스 품질을 구조방정식(SEM)으로 모형화해 고객만족지수(CSI)를 산출한 컨설팅 프로젝트"
 ---
 
 ## 개요

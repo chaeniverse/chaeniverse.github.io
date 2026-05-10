@@ -1,7 +1,7 @@
 ---
 title: "Whole-Brain Functional Gradients in Migraine"
 date: 2023-04-01
-summary: "편두통 환자의 뇌 기능 저하를 정량적으로 평가하기 위한 연구. 비선형 매니폴드 러닝으로 고차원 뇌 영상을 차원 축소하고, 다변량 분석 및 머신러닝을 통한 임상 지표 예측. Human Brain Mapping에 출판 (2023.04)."
+summary: "편두통 환자의 뇌 기능 저하를 비선형 매니폴드 러닝으로 정량화 (Human Brain Mapping, IF 4.7)."
 tags:
   - Machine Learning
   - Statistical Analysis
@@ -18,15 +18,14 @@ links:
     url: https://github.com/chaeniverse/migraine_project
     label: Code
   - type: paper
-    url: paper.pdf
-    label: Paper (PDF)
+    url: https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.26204
+    label: Paper (Human Brain Mapping)
 featured: true
 status: "Published"
 role: "1저자"
 duration: "석사과정"
 highlights:
-  - "비모수 순열 검정과 FDR 보정으로 편두통 특이적 뇌 영역 검출"
-  - "LASSO + 5-겹 중첩 교차 검증 기반 머신러닝 모델로 임상 지표 예측 (편향 방지를 위해 100회 반복)"
+  - "편두통 환자의 뇌 기능 저하를 비선형 매니폴드 러닝으로 정량화"
 ---
 
 #### 개요

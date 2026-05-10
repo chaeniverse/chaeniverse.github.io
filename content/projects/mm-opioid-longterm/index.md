@@ -1,7 +1,7 @@
 ---
 title: "Long-term Opioid Use in Newly Diagnosed Multiple Myeloma"
 date: 2026-05-04
-summary: "신규 진단 다발골수종 환자에서 장기 오피오이드 사용의 양상과 예측 인자를 규명하는 전국 단위 후향적 코호트 연구. HIRA 빅데이터 3,621명 대상, 베이스라인 위험 점수 모형 개발. 1저자, 논문 작성 중."
+summary: "신규 진단 다발골수종 환자의 장기 오피오이드 사용 양상·예측 인자 규명 (submit 준비 중)."
 tags:
   - Statistical Analysis
   - Big Data Analysis
@@ -14,14 +14,11 @@ tech_stack:
   - Risk Scoring
 links: []
 featured: true
-status: "Manuscript in Preparation"
+status: "Ongoing"
 role: "1저자"
 duration: "2025–2026 (ongoing)"
 highlights:
-  - "HIRA 전국 코호트 3,621명에서 신규 진단 MM 환자의 장기 오피오이드 사용 양상 분석"
-  - "초기 오피오이드 강도가 가장 강한 예측 인자 (aOR 2.25–3.64, p<.001)"
-  - "베이스라인 위험 점수 모형 개발 — 저/중/고위험군 stratification (장기 사용률 55.1% / 65.0% / 74.3%)"
-  - "보수적 처방 환경에서도 약 2/3가 장기 사용으로 진행 — 조기 위험 기반 통증 관리 계획의 필요성 제시"
+  - "신규 진단 다발골수종 환자의 장기 오피오이드 사용 양상·예측 인자 규명"
 ---
 
 #### 개요

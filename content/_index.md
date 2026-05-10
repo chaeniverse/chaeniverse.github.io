@@ -58,14 +58,14 @@ sections:
       buttons:
         - name: All
           tag: '*'
+        - name: App/Service
+          tag: App/Service
         - name: Machine Learning
           tag: Machine Learning
         - name: Deep Learning
           tag: Deep Learning
         - name: Big Data Analysis
           tag: Big Data Analysis
-        - name: Service/App
-          tag: Service/App
       default_button_index: 0
       # Archive link auto-shown if more projects exist than 'count' above
       # archive:

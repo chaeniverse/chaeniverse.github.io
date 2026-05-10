@@ -1,7 +1,7 @@
 ---
 title: "Cross-Modality Neonatal Brain Image Conversion with Latent Diffusion"
 date: 2025-09-01
-summary: "신생아 뇌 MRI에서 T2-weighted 영상으로부터 T1-weighted 영상을 합성하는 latent diffusion model. Autoencoder-KL 인코더 + conditional image-to-image translation 적용. IEEE AIxMHC 2025 oral 발표."
+summary: "신생아 뇌 T2w → T1w 합성 latent diffusion model (IEEE AIxMHC 2025 oral, co-corresponding)."
 tags:
   - Deep Learning
   - Generative AI
@@ -14,17 +14,14 @@ tech_stack:
   - U-Net
 links:
   - type: paper
-    url: paper.pdf
-    label: Paper (PDF)
+    url: https://ieeexplore.ieee.org/document/11326830
+    label: Paper (IEEE Xplore)
 featured: true
 status: "Presentation (Oral)"
 role: "공동 교신저자 (Oral 발표)"
 duration: "2025"
 highlights:
-  - "IEEE AIxMHC 2025 컨퍼런스 공동 교신저자 oral presentation"
-  - "Latent Diffusion Model 기반 T2w → T1w cross-modality conversion"
-  - "Held-out test에서 PSNR 21.03 dB, SSIM 0.6963 달성"
-  - "기존 GAN 방식의 mode collapse / 학습 불안정성 한계 극복"
+  - "신생아 뇌 T2w → T1w 합성 latent diffusion model"
 ---
 
 #### 개요

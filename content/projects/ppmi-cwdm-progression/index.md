@@ -1,7 +1,7 @@
 ---
 title: "Future DaTScan Synthesis for Parkinson's Progression with Conditional Wavelet Diffusion"
 date: 2026-05-01
-summary: "초기 DaTScan 영상 한 장으로 2년 후 영상을 합성하는 딥러닝 프레임워크. 조건부 웨이블릿 확산 모델 (cWDM) 기반, PPMI 746쌍 종단 데이터 학습. 한국통계학회 1저자 포스터 발표."
+summary: "DaTScan 한 장으로 2년 후 영상을 합성하는 conditional wavelet diffusion 프레임워크 (한국통계학회 포스터, 1저자)."
 tags:
   - Deep Learning
   - Generative AI
@@ -21,10 +21,7 @@ status: "Presentation (Poster)"
 role: "1저자"
 duration: "2025–2026"
 highlights:
-  - "한국통계학회 1저자 포스터 발표 (2026)"
-  - "PPMI 746쌍 종단 DaTScan SPECT 데이터 활용한 미래 영상 합성"
-  - "3D Haar wavelet 분해 기반 cWDM으로 정보 손실 없이 연산 비용 절감"
-  - "테스트 세트 PSNR 21.99 dB, SSIM 0.645 / 부위별 SBR 상관 r = 0.66–0.70 (p < 0.001)"
+  - "DaTScan 한 장으로 2년 후 영상을 합성하는 conditional wavelet diffusion 프레임워크"
 ---
 
 #### 개요
