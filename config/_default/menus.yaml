@@ -18,3 +18,7 @@ main:
   - name: Contact
     url: /#contact
     weight: 50
+  # The English site lives at the root of the domain (built from en/).
+  - name: English
+    url: https://chaeniverse.github.io/
+    weight: 60

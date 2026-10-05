@@ -156,8 +156,8 @@ summary(result)
 
 ## 관련
 
-- [Causal Inference: PSM, IPTW, CCW, TTE](/blog/causal-inference/)
-- [Competing Risk Analysis](/blog/competing-risk-analysis/)
+- [Causal Inference: PSM, IPTW, CCW, TTE](../causal-inference/)
+- [Competing Risk Analysis](../competing-risk-analysis/)
 
 ## 참고
 

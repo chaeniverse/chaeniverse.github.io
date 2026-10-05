@@ -1,0 +1,6 @@
+{{ define "main" }}
+<h1 class="page__title">{{ .Title }}</h1>
+{{ with .Params.subtitle }}<p class="page__subtitle">{{ . }}</p>{{ end }}
+{{ .Content }}
+{{ partial (printf "section-%s.html" .Section) . }}
+{{ end }}

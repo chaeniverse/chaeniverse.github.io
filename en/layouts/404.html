@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1 class="page__title">Page not found</h1>
+<p class="page__subtitle">Sorry, that page doesn't exist.</p>
+<p>Go back to the <a href="{{ "/" | relURL }}">homepage</a>, browse <a href="{{ "projects/" | relURL }}">projects</a> or <a href="{{ "blog/" | relURL }}">notes</a>, or visit the <a href="{{ site.Params.korPath | relURL }}" lang="ko">Korean site (한국어)</a>.</p>
+{{ end }}

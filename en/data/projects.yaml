@@ -1,0 +1,244 @@
+# Projects, newest first within each group.
+#
+# Fields
+#   slug      folder name of the Korean write-up (content/projects/<slug>/);
+#             used for the "write-up (KR)" link, the thumbnail lookup and
+#             the redirect from the old /projects/<slug>/ URL
+#   group     id from `groups` below
+#   title, authors, venue, summary   (inline HTML allowed)
+#   badge     short label under the thumbnail
+#   image     file inside the Korean page bundle (optional)
+#   icon      Font Awesome icon used when there is no image
+#   pdf       file inside the Korean page bundle (optional)
+#   links     list of {label, url}
+#   selected  true → also listed on the about page
+
+groups:
+  - id: health
+    title: healthcare big data & statistics
+  - id: imaging
+    title: generative AI & medical imaging
+  - id: llm
+    title: LLMs & generative AI — K-pop virtual idol app
+    note: >-
+      Part of the work involves confidential material, so prompts, generated
+      images and character details are not published; the write-ups focus on
+      experiment design and methodology.
+  - id: consulting
+    title: statistical consulting
+
+items:
+  # ── healthcare big data & statistics ────────────────────────────────────
+  - slug: mm-opioid-longterm
+    group: health
+    title: "Patterns and Predictors of Long-term Opioid Use in Patients with Newly Diagnosed Multiple Myeloma: A Nationwide Real-world Study"
+    authors: "<span class='me'>Chaehyeon Lee</span>, Suein Choi, Sung-Soo Park"
+    venue: "Manuscript in preparation (first author)."
+    badge: "In prep."
+    icon: fa-pills
+    summary: >-
+      Nationwide retrospective cohort of 3,621 patients from the HIRA claims
+      database. 65.6% of patients who started opioids progressed to long-term
+      use; initial opioid strength was the strongest predictor (strong only:
+      aOR 2.25; weak and strong: aOR 3.64). A baseline risk score stratifies
+      patients into low / intermediate / high-risk groups (55.1% / 65.0% /
+      74.3%).
+    links: []
+    selected: true
+
+  - slug: ovarisk-ml
+    group: health
+    title: "OvaRisk-ML: Ovarian Cancer Risk Classification with Machine Learning"
+    authors: "Co-author"
+    venue: "Manuscript under review."
+    badge: "Under review"
+    image: featured.png
+    summary: >-
+      End-to-end risk classification system: EDA, imputation, VIF screening,
+      RFE-CV feature selection, and five models (RF, LR, XGBoost, CatBoost,
+      MLP) tuned with Bayesian optimization over 50 repeated splits, with
+      Bayes-rule correction after undersampling. Deployed as a Shiny for
+      Python app that outputs lifetime-risk cumulative incidence.
+    links:
+      - label: code
+        url: https://github.com/chaeniverse/OvaRisk-ML
+      - label: app
+        url: https://chaehyun3253.shinyapps.io/my-app/
+    selected: true
+
+  - slug: mm-precursor-survival
+    group: health
+    title: "Improved Survival in Multiple Myeloma Following Prior Detection of Precursor Conditions: A Nationwide Real-world Study"
+    authors: "S. Choi, S.S. Park, <span class='me'>C.H. Lee</span>, et al."
+    venue: "<em>Blood Cancer Journal</em>, Oct. 2025 (IF 11.6)."
+    badge: "Blood Cancer J. 2025"
+    image: featured.jpg
+    pdf: paper.pdf
+    summary: >-
+      Defined MGUS, smoldering MM and <em>de novo</em> MM cohorts with SQL from
+      HIRA claims data covering ~50 million people, then compared survival with
+      IPTW, weighted survival curves and marginal Cox models — showing that
+      prior detection of precursor conditions improves survival.
+    links:
+      - label: paper
+        url: https://www.nature.com/articles/s41408-025-01395-6
+      - label: code
+        url: https://github.com/chaeniverse/mm-precursor-survival
+    selected: true
+
+  # ── generative AI & medical imaging ─────────────────────────────────────
+  - slug: ppmi-cwdm-progression
+    group: imaging
+    title: "Future DaTScan Synthesis for Parkinson's Progression with a Conditional Wavelet Diffusion Model"
+    authors: "<span class='me'>C.H. Lee</span>, et al."
+    venue: "Korean Statistical Society Conference, 2026 (poster, first author)."
+    badge: "KSS 2026 · Poster"
+    icon: fa-brain
+    summary: >-
+      Synthesizes the 2-year follow-up DaTScan SPECT image from a single
+      baseline scan using a conditional wavelet diffusion model with a 3D Haar
+      wavelet (746 PPMI image pairs). On the test set: PSNR 21.99 dB,
+      SSIM 0.645; regional striatal binding ratios correlate with real
+      follow-up scans (r = 0.66–0.70, p &lt; 0.001).
+    links:
+      - label: code
+        url: https://github.com/chaeniverse/cwdm
+    selected: true
+
+  - slug: neonatal-brain-diffusion
+    group: imaging
+    title: "Cross-Modality Neonatal Brain Image Conversion Using a Latent Diffusion Model"
+    authors: "<span class='me'>C.H. Lee</span>, K. Lee, B. Park"
+    venue: "IEEE International Conference on Artificial Intelligence for Medicine, Health and Care <strong>(AIxMHC)</strong>, 2025."
+    note: "oral presentation, co-corresponding author"
+    badge: "AIxMHC 2025 · Oral"
+    image: featured.jpg
+    pdf: paper.pdf
+    summary: >-
+      A 2D slice-wise conditional latent diffusion model (Autoencoder-KL +
+      U-Net) that synthesizes neonatal T1w MRI from routinely acquired T2w
+      scans — a fast, sedation-free route to multi-contrast neonatal MRI
+      (PSNR 21.03 dB, SSIM 0.696).
+    links:
+      - label: paper
+        url: https://ieeexplore.ieee.org/document/11326830
+    selected: true
+
+  - slug: migraine-functional-gradients
+    group: imaging
+    title: "Whole-Brain Functional Gradients Reveal Cortical and Subcortical Alterations in Patients with Episodic Migraine"
+    authors: "<span class='me'>C.H. Lee</span>, H. Park, M.J. Lee, B. Park"
+    venue: "<em>Human Brain Mapping</em>, Apr. 2023 (IF 4.7, first author)."
+    badge: "HBM 2023"
+    image: featured.jpg
+    pdf: paper.pdf
+    summary: >-
+      Non-linear manifold learning on resting-state fMRI to quantify functional
+      alterations in migraine, extended to subcortico-cortical gradients.
+      LASSO feature selection with nested 5-fold cross-validation (repeated
+      100 times) predicts headache frequency in an external validation set.
+    links:
+      - label: paper
+        url: https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.26204
+      - label: code
+        url: https://github.com/chaeniverse/migraine_project
+    selected: true
+
+  # ── LLMs & generative AI — K-pop virtual idol app ──────────────────────
+  - slug: kpop-virtual-idol-mbti
+    group: llm
+    title: "MBTI Persona Priming for Chatbot Persona Consistency"
+    venue: "K-pop virtual idol app, 2026 · analysis & design."
+    badge: "LLM · Persona"
+    icon: fa-masks-theater
+    summary: >-
+      Reviewed the <em>Psychologically Enhanced AI Agents</em> framework and
+      designed a validation flow: 60 16Personalities items × 15 repetitions on a
+      7-point Likert scale, comparing three prompt variants (MBTI label only,
+      label + structured description, description only), plus a
+      WritingPrompts story task scored by an LLM judge.
+    links:
+      - label: reference paper
+        url: https://arxiv.org/pdf/2509.04343
+      - label: reference code
+        url: https://github.com/spcl/MBTI-in-Thoughts
+
+  - slug: kpop-virtual-idol-casting-image
+    group: llm
+    title: "Casting Image Generation"
+    venue: "K-pop virtual idol app, 2026 · analysis & experiments."
+    badge: "Image generation"
+    icon: fa-user
+    summary: >-
+      Generated K-pop trainee candidates from a grid of prompt variables, then
+      refined ID photos with negative constraints and a visual-upgrade stage.
+      Twelve large casting runs (~800 images) with automated HTML reports led
+      to the final casting prompt.
+    links:
+      - label: code
+        url: https://github.com/chaeniverse/kpop-image-experiments
+
+  - slug: kpop-virtual-idol-opt2i
+    group: llm
+    title: "OPT2I — Iterative Prompt Refinement with DSG Evaluation"
+    venue: "K-pop virtual idol app, 2026 · analysis & experiments."
+    badge: "Prompt optimization"
+    icon: fa-wand-magic-sparkles
+    summary: >-
+      Implemented OPT2I (Mañas et al., 2024), an LLM-as-optimizer loop over
+      rounds × variants, and scored images with the Davidsonian Scene Graph
+      (DSG) metric, which breaks a prompt into atomic VQA questions and shows
+      which parts of the prompt an image fails to satisfy.
+    links:
+      - label: reference paper
+        url: https://arxiv.org/abs/2403.17804
+      - label: code
+        url: https://github.com/chaeniverse/opt2i-dsg
+
+  - slug: kpop-virtual-idol-content-generation
+    group: llm
+    title: "Content Image Generation"
+    venue: "K-pop virtual idol app, 2026 · analysis & experiments."
+    badge: "Image generation"
+    icon: fa-images
+    summary: >-
+      Generated ~3,200 content images across three scenes while keeping the
+      character's face consistent, using reference-image conditioning,
+      combo-grid prompt variation and negative constraints, with an automated
+      pipeline from prompt grid to HTML review report.
+    links:
+      - label: code
+        url: https://github.com/chaeniverse/kpop-image-experiments
+
+  - slug: kpop-virtual-idol-llm-benchmark
+    group: llm
+    title: "LLM Model Benchmark"
+    venue: "K-pop virtual idol app, 2026 · analysis & experiments."
+    badge: "LLM · Benchmark"
+    icon: fa-comments
+    summary: >-
+      Selected the chatbot LLM by shortlisting ~24 lightweight models from the
+      EQ-Bench leaderboard, comparing premium and lightweight top-5 lists,
+      simulating per-request cost, and running controlled MBTI-primed
+      benchmark questions.
+    links:
+      - label: reference paper
+        url: https://arxiv.org/pdf/2312.06281
+      - label: reference code
+        url: https://github.com/EQ-bench/eqbench3
+      - label: code
+        url: https://github.com/chaeniverse/LLM-bench
+
+  # ── statistical consulting ──────────────────────────────────────────────
+  - slug: sem-customer-satisfaction
+    group: consulting
+    title: "Customer Satisfaction Index Modeling with SEM (Amos)"
+    venue: "Medical Statistics Support Center, Inha University Hospital, 2023 · statistical analyst."
+    badge: "SEM · Consulting"
+    icon: fa-chart-line
+    summary: >-
+      Modeled hospital service quality as a multi-indicator SEM measurement
+      model, checked fit (χ², CFI, TLI, RMSEA, SRMR) and convergent validity
+      (CR, AVE), and computed a single customer satisfaction index from
+      standardized weights — done in-house instead of outsourcing.
+    links: []

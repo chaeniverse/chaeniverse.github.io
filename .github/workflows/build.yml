@@ -132,13 +132,16 @@ jobs:
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        # Korean site (HugoBlox, repository root) → /kor/
+        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/kor/" --destination public/kor
+        # English site (en/) → / (publishDir in en/hugo.yaml is ../public)
+        hugo --source en --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
     - name: Generate Pagefind search index (if applicable)
       run: |
-        # Check if site uses Pagefind search
+        # Only the Korean HugoBlox site uses Pagefind search (served from /kor/pagefind/)
         if [ -f "package.json" ] && grep -q "pagefind" package.json; then
-          pnpm run pagefind || npx pagefind --site "public"
+          npx pagefind --site "public/kor"
         fi
 
     - name: Upload artifact

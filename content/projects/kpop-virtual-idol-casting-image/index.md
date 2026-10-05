@@ -60,7 +60,7 @@ Step 1 결과에서 발견된 문제 (배경 색감이 인물 식별을 방해, 
 
 ### Step 3 — Visual Upgrade
 
-Step 2의 ID 사진을 reference로 두고, 같은 인물성을 유지하면서 **사진 품질을 끌어올리는** prompt 변종을 비교. 채택된 best 버전이 후속 [Content Image Generation](/projects/kpop-virtual-idol-content-generation/) 단계의 기본 reference로 사용됨.
+Step 2의 ID 사진을 reference로 두고, 같은 인물성을 유지하면서 **사진 품질을 끌어올리는** prompt 변종을 비교. 채택된 best 버전이 후속 [Content Image Generation](../kpop-virtual-idol-content-generation/) 단계의 기본 reference로 사용됨.
 
 ## 대규모 캐스팅 런 (Casting Runs)
 
@@ -87,6 +87,6 @@ Prompt 설계가 어느 정도 안정화된 후, 후보 다양성 확보를 위�
 
 ## 다음 단계 / 관련
 
-- 확정된 companion profile 을 reference로 → [Content Image Generation](/projects/kpop-virtual-idol-content-generation/) (다양한 scene 의 콘텐츠 컷)
-- 특정 포즈 정제 → [OPT2I — Iterative Prompt Refinement](/projects/kpop-virtual-idol-opt2i/)
-- 챗봇 persona 결합 → [MBTI Persona Priming](/projects/kpop-virtual-idol-mbti/)
+- 확정된 companion profile 을 reference로 → [Content Image Generation](../kpop-virtual-idol-content-generation/) (다양한 scene 의 콘텐츠 컷)
+- 특정 포즈 정제 → [OPT2I — Iterative Prompt Refinement](../kpop-virtual-idol-opt2i/)
+- 챗봇 persona 결합 → [MBTI Persona Priming](../kpop-virtual-idol-mbti/)

@@ -1,0 +1,11 @@
+{{/* Redirect stubs: /projects/<slug>/ → /kor/projects/<slug>/ */}}
+{{ range hugo.Data.projects.items }}
+  {{ $.AddPage (dict
+    "kind" "page"
+    "path" .slug
+    "title" .title
+    "params" (dict "redirect" (printf "%sprojects/%s/" site.Params.korPath .slug))
+    "build" (dict "list" "never" "render" "always")
+    "sitemap" (dict "disable" true)
+  ) }}
+{{ end }}

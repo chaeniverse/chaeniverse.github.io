@@ -1,0 +1,71 @@
+# About-page sections. `content` / `detail` accept inline HTML.
+
+# Newest first.
+news:
+  - date: "2026"
+    content: "Presented a first-author poster on <a href='/projects/#ppmi-cwdm-progression'>future DaTScan synthesis with conditional wavelet diffusion</a> at the Korean Statistical Society conference."
+  - date: "2026"
+    content: "Built the LLM and image-generation pipelines for a K-pop virtual idol app: <a href='/projects/#kpop-virtual-idol-llm-benchmark'>LLM benchmark</a>, <a href='/projects/#kpop-virtual-idol-mbti'>MBTI persona priming</a>, and <a href='/projects/#kpop-virtual-idol-opt2i'>OPT2I prompt refinement</a>."
+  - date: "Oct 2025"
+    content: "Our paper on prior detection of myeloma precursor conditions is published in <strong>Blood Cancer Journal</strong>."
+  - date: "2025"
+    content: "Gave an oral presentation on neonatal T2w → T1w synthesis with latent diffusion at <strong>IEEE AIxMHC 2025</strong>."
+  - date: "Feb 2024"
+    content: "Joined the Big Data Team at PIPET, The Catholic University of Korea, as a Data Scientist."
+  - date: "Apr 2023"
+    content: "My first-author paper on functional gradients in migraine is published in <strong>Human Brain Mapping</strong>."
+  - date: "Feb 2023"
+    content: "Received my M.S. in Statistics from Inha University and joined the Medical Statistics Support Center at Inha University Hospital."
+
+experience:
+  - when: "Feb 2024 – present"
+    what: "Data Scientist"
+    where: "Big Data Team, PIPET, The Catholic University of Korea"
+    detail: >-
+      Builds statistical and machine-learning models on nationwide healthcare
+      big data (HIRA, ~50 million people), handling extraction, preprocessing,
+      analysis, modeling and interpretation with SQL, Python and R. Also
+      designs LLM benchmarks, persona priming and image-generation pipelines
+      for a K-pop virtual idol app.
+  - when: "Feb 2023 – Dec 2023"
+    what: "Data Analyst"
+    where: "Medical Statistics Support Center, Inha University Hospital"
+    detail: >-
+      Statistical consulting for clinical research teams across departments:
+      study design, data cleaning, statistical modeling and manuscript
+      analyses with SAS, R and SPSS. Completed 21 statistical analyses and
+      taught 8 R training sessions.
+
+education:
+  - when: "2021 – 2023"
+    what: "M.S. in Statistics"
+    where: "Inha University"
+    detail: >-
+      Research: machine learning and neuroscience. Teaching assistant for
+      Programming Languages, Data Structures, Introductory Statistics I,
+      Introduction to Data Science, Object-Oriented Programming, and
+      Statistical Analysis Methods &amp; Data Mining.
+  - when: "2016 – 2021"
+    what: "B.S. in Statistics"
+    where: "Inha University"
+
+interests:
+  - Statistical evaluation of generative AI / LLMs
+  - Large-scale real-world data analysis
+  - Causal inference and survival analysis
+  - LLM applications and audience analytics
+  - K-pop and entertainment data
+
+skills:
+  - name: languages
+    items: [Python, R, SQL, SAS, SPSS]
+  - name: libraries
+    items: [scikit-learn, PyTorch, pandas, NumPy]
+  - name: tools
+    items: [Jupyter, RStudio, VS Code, Shiny, Tableau, Git, Linux, GitHub, Notion, Slack]
+
+languages:
+  - name: English
+    level: "TOEIC Speaking IH · TOEFL 88"
+  - name: Korean
+    level: "Native"

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chaehyeon Lee — CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 9mm 12mm 8mm 12mm;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: -apple-system, "SF Pro Text", "Pretendard", "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937;
+    font-size: 8.6pt;
+    line-height: 1.3;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: #4f46e5; text-decoration: none; }
+  h1 {
+    font-size: 22pt; font-weight: 700; color: #111827; letter-spacing: -0.5px;
+  }
+  h2 {
+    font-size: 10pt; font-weight: 700; color: #4f46e5;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin: 6px 0 2px 0;
+    padding-bottom: 1.5px;
+    border-bottom: 1.2px solid #4f46e5;
+  }
+  h2 .hint {
+    font-size: 7.5pt; font-weight: 500;
+    text-transform: none; letter-spacing: 0;
+    margin-left: 8px; color: #4f46e5; opacity: 0.85;
+  }
+  h3 {
+    font-size: 10pt; font-weight: 700; color: #111827;
+    margin-top: 5px;
+  }
+  .header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 2.2px solid #111827;
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+  }
+  .header .left .name { font-size: 22pt; font-weight: 700; color: #111827; letter-spacing: -0.5px; }
+  .header .left .role { font-size: 11pt; color: #4f46e5; font-weight: 600; margin-top: 1px; }
+  .header .right { font-size: 9pt; color: #4b5563; text-align: right; line-height: 1.55; }
+  .header .right a { color: #4f46e5; }
+  .summary { margin: 6px 0 2px 0; color: #1f2937; }
+  .skills-grid { display: grid; grid-template-columns: 130px 1fr; gap: 2px 8px; margin-top: 2px; }
+  .skills-grid .label { font-weight: 600; color: #374151; }
+  .exp-item, .edu-item, .proj-block { margin-top: 3px; }
+  .exp-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-row .left { font-weight: 600; color: #111827; }
+  .exp-row .right { font-size: 8pt; color: #6b7280; }
+  ul { padding-left: 13px; margin-top: 1px; }
+  li { margin-bottom: 0px; }
+  .proj-cluster {
+    margin-top: 4px;
+  }
+  .proj-cluster-title {
+    font-weight: 700; color: #111827; font-size: 9pt;
+    margin-bottom: 1px;
+  }
+  .proj-list li { line-height: 1.4; }
+  .proj-list li::marker { color: #9ca3af; }
+  .footer-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    font-size: 8pt; color: #4b5563;
+    margin-top: 4px;
+  }
+  .pub-item { margin-bottom: 1px; }
+  .small { font-size: 8pt; color: #6b7280; }
+  .accent { color: #4f46e5; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="left">
+    <div class="name">Chaehyeon Lee</div>
+    <div class="role">Data Scientist</div>
+  </div>
+  <div class="right">
+    chaehyun3253@gmail.com<br>
+    <a href="https://chaeniverse.github.io/">chaeniverse.github.io</a> ·
+    <a href="https://github.com/chaeniverse">github.com/chaeniverse</a><br>
+    <a href="https://www.linkedin.com/in/%EC%B1%84%ED%98%84-%EC%9D%B4-65a65221b/">linkedin.com/in/chaehyun-lee</a>
+  </div>
+</div>
+
+<div class="summary">
+Data Scientist at PIPET, The Catholic University of Korea. Hands-on in both <span class="accent">prompt engineering and evaluation frameworks for LLMs / generative AI</span> and <span class="accent">large-scale healthcare big data analysis and statistical modeling</span>. Designed and ran the chatbot persona, LLM selection benchmark, and image-generation pipeline end-to-end for a K-pop virtual idol app. Covers the full pipeline from data extraction to analysis, modeling, and LLM applications with Python, SQL, and R.
+</div>
+
+<h2>Skills</h2>
+<div class="skills-grid">
+  <div class="label">Languages</div>
+  <div>Python, R, SQL, SAS, SPSS</div>
+  <div class="label">Libraries</div>
+  <div>scikit-learn, PyTorch, pandas, NumPy</div>
+  <div class="label">Tools</div>
+  <div>Jupyter, RStudio, VS Code, Shiny, Tableau, Git, Linux, GitHub, Notion, Slack</div>
+</div>
+
+<h2>Experience</h2>
+
+<div class="exp-item">
+  <div class="exp-row">
+    <div class="left">Data Scientist · Big Data Team, PIPET, The Catholic University of Korea</div>
+    <div class="right">Feb 2024 – present</div>
+  </div>
+  <ul>
+    <li>Cohort extraction, preprocessing, and statistical modeling on nationwide HIRA healthcare big data (~50 million people) with SQL · R · SAS · Python</li>
+    <li>Multiple myeloma (MM) — showed with causal inference and survival analysis that prior detection of precursor conditions improves survival; <strong>published in Blood Cancer Journal (IF 11.6)</strong></li>
+    <li>K-pop virtual idol app side project — designed and ran an <strong>LLM benchmark, MBTI persona priming, and image-generation pipelines</strong> end-to-end; documented in the <a href="https://chaeniverse.github.io/projects/">portfolio</a></li>
+  </ul>
+</div>
+
+<div class="exp-item">
+  <div class="exp-row">
+    <div class="left">Data Analyst · Medical Statistics Support Center, Inha University Hospital</div>
+    <div class="right">Feb 2023 – Dec 2023</div>
+  </div>
+  <ul>
+    <li>Supported clinical research teams across departments with study design, data cleaning, statistical modeling, and manuscript statistics</li>
+    <li>Completed <strong>21 statistical analyses and 8 R training sessions</strong></li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+
+<div class="edu-item">
+  <div class="exp-row">
+    <div class="left">M.S. in Statistics · Inha University</div>
+    <div class="right">Mar 2021 – Feb 2023</div>
+  </div>
+  <div class="small">Research: machine learning · neuroscience. Teaching assistant: Programming Languages, Data Structures, Introduction to Data Science, Statistical Analysis Methods &amp; Data Mining, and more.</div>
+</div>
+
+<div class="edu-item">
+  <div class="exp-row">
+    <div class="left">B.S. in Statistics · Inha University</div>
+    <div class="right">Mar 2016 – Feb 2021</div>
+  </div>
+</div>
+
+<h2>Selected Projects <span class="hint">★ click a title for details</span></h2>
+
+<div class="proj-cluster">
+  <div class="proj-cluster-title">LLM / AI Agent · Generative AI Pipelines (K-pop Virtual Idol App)</div>
+  <ul class="proj-list">
+    <li><strong><a href="https://chaeniverse.github.io/projects/#kpop-virtual-idol-llm-benchmark">LLM Model Benchmark</a></strong> — shortlisted candidates from the EQ-Bench leaderboard → compared premium / lightweight top-5 models with cost simulation; evaluated response quality with MBTI priming and domain-curated questions. <span class="small">[<a href="https://github.com/chaeniverse/LLM-bench">chaeniverse/LLM-bench</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#kpop-virtual-idol-mbti">MBTI Persona Priming</a></strong> — reviewed an arXiv framework and designed a validation flow for LLM persona consistency: 16Personalities 60 items / 7-point Likert / 15 repetitions.</li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#kpop-virtual-idol-casting-image">Casting</a> &amp; <a href="https://chaeniverse.github.io/projects/#kpop-virtual-idol-content-generation">Content</a> Image Generation</strong> — two stages (trainee casting, ~800 images; content scenes, ~3,200 images), each generated over a grid of prompt variables and reviewed qualitatively. Identity consistency via reference-image conditioning and negative constraints. <span class="small">[<a href="https://github.com/chaeniverse/kpop-image-experiments">chaeniverse/kpop-image-experiments</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#kpop-virtual-idol-opt2i">OPT2I + DSG</a></strong> — implemented the iterative prompt refinement algorithm of Mañas et al. 2024 (arXiv:2403.17804). DSG (Davidsonian Scene Graph) splits a prompt into small questions scored by VQA, quantifying how well an image reflects its prompt. <span class="small">[<a href="https://github.com/chaeniverse/opt2i-dsg">chaeniverse/opt2i-dsg</a>]</span></li>
+  </ul>
+</div>
+
+<div class="proj-cluster">
+  <div class="proj-cluster-title">Healthcare Big Data · ML</div>
+  <ul class="proj-list">
+    <li><strong><a href="https://chaeniverse.github.io/projects/#mm-precursor-survival">Improved Survival in MM with Early Precursor Detection</a></strong> — defined and extracted MGUS / SMM / de novo MM cohorts from ~50 million people in HIRA data; IPTW + marginal Cox regression showed the survival benefit of prior detection. <span class="accent">Blood Cancer Journal (IF 11.6, 2025).</span> <span class="small">[<a href="https://github.com/chaeniverse/mm-precursor-survival">chaeniverse/mm-precursor-survival</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#mm-opioid-longterm">Long-term Opioid Use in MM</a></strong> — defined and extracted 3,621 newly diagnosed MM patients from HIRA data; baseline risk-score model with low / intermediate / high-risk stratification. Manuscript in preparation (first author).</li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#ovarisk-ml">OvaRisk-ML</a></strong> — ovarian cancer risk classification with five ML models (RF, LR, XGBoost, CatBoost, MLP) + RFE + Bayesian HPO + Bayes-rule correction. <strong>Deployed as a Python Shiny app</strong> that outputs lifetime-risk cumulative incidence. Under review. <span class="small">[<a href="https://github.com/chaeniverse/OvaRisk-ML">chaeniverse/OvaRisk-ML</a>] [<a href="https://chaehyun3253.shinyapps.io/my-app/">Shiny App</a>]</span></li>
+  </ul>
+</div>
+
+<div class="proj-cluster">
+  <div class="proj-cluster-title">Generative AI · Medical Imaging</div>
+  <ul class="proj-list">
+    <li><strong><a href="https://chaeniverse.github.io/projects/#ppmi-cwdm-progression">Future DaTScan Synthesis with cWDM</a></strong> — conditional wavelet diffusion framework that synthesizes the 2-year follow-up image from a single baseline DaTScan; 746 longitudinal PPMI pairs. <span class="accent">Korean Statistical Society, first-author poster.</span> <span class="small">[<a href="https://github.com/chaeniverse/cwdm">chaeniverse/cwdm</a>]</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#neonatal-brain-diffusion">Cross-Modality Neonatal Brain Image Conversion</a></strong> — latent diffusion model synthesizing neonatal T1w from T2w MRI. <span class="accent">IEEE AIxMHC 2025 oral (co-corresponding author).</span></li>
+    <li><strong><a href="https://chaeniverse.github.io/projects/#migraine-functional-gradients">Whole-Brain Functional Gradients in Migraine</a></strong> — quantified brain function in migraine with non-linear manifold learning. <span class="accent">Human Brain Mapping (IF 4.7, 2023, first author).</span> <span class="small">[<a href="https://github.com/chaeniverse/migraine_project">chaeniverse/migraine_project</a>]</span></li>
+  </ul>
+</div>
+
+<div class="proj-cluster">
+  <div class="proj-cluster-title">Statistical Consulting · KPI Modeling</div>
+  <ul class="proj-list">
+    <li><strong><a href="https://chaeniverse.github.io/projects/#sem-customer-satisfaction">Customer Satisfaction Index Modeling with SEM (Amos)</a></strong> — modeled hospital service quality with structural equation modeling and computed a customer satisfaction index (CSI) from standardized regression weights. Consulting at the Medical Statistics Support Center, Inha University Hospital.</li>
+  </ul>
+</div>
+
+<div class="footer-row">
+  <div><strong>Languages</strong> · English (TOEIC Speaking IH · TOEFL 88) · Korean (Native)</div>
+  <div style="text-align: right;"><strong>Portfolio</strong> · <a href="https://chaeniverse.github.io/">chaeniverse.github.io</a></div>
+</div>
+
+</body>
+</html>

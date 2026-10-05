@@ -97,6 +97,6 @@ for round r = 1..R:
 
 ## 관련
 
-- 트레이니 캐스팅 단계 → [Casting Image Generation](/projects/kpop-virtual-idol-casting-image/)
-- 콘텐츠 컷 단계 → [Content Image Generation](/projects/kpop-virtual-idol-content-generation/)
-- 챗봇 persona 단계 → [MBTI Persona Priming](/projects/kpop-virtual-idol-mbti/)
+- 트레이니 캐스팅 단계 → [Casting Image Generation](../kpop-virtual-idol-casting-image/)
+- 콘텐츠 컷 단계 → [Content Image Generation](../kpop-virtual-idol-content-generation/)
+- 챗봇 persona 단계 → [MBTI Persona Priming](../kpop-virtual-idol-mbti/)

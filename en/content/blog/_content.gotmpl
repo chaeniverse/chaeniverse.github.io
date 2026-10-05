@@ -1,0 +1,13 @@
+{{/* Redirect stubs: /blog/<slug>/ → /kor/blog/<slug>/ */}}
+{{ range hugo.Data.notes.groups }}
+  {{ range .items }}
+    {{ $.AddPage (dict
+      "kind" "page"
+      "path" .slug
+      "title" .title
+      "params" (dict "redirect" (printf "%sblog/%s/" site.Params.korPath .slug))
+      "build" (dict "list" "never" "render" "always")
+      "sitemap" (dict "disable" true)
+    ) }}
+  {{ end }}
+{{ end }}
