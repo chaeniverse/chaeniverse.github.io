@@ -1,22 +1,5 @@
 # About-page sections. `content` / `detail` accept inline HTML.
 
-# Newest first.
-news:
-  - date: "2026"
-    content: "Presented a first-author poster on <a href='/projects/#ppmi-cwdm-progression'>future DaTScan synthesis with conditional wavelet diffusion</a> at the Korean Statistical Society conference."
-  - date: "2026"
-    content: "Built the LLM and image-generation pipelines for a K-pop virtual idol app: <a href='/projects/#kpop-virtual-idol-llm-benchmark'>LLM benchmark</a>, <a href='/projects/#kpop-virtual-idol-mbti'>MBTI persona priming</a>, and <a href='/projects/#kpop-virtual-idol-opt2i'>OPT2I prompt refinement</a>."
-  - date: "Oct 2025"
-    content: "Our paper on prior detection of myeloma precursor conditions is published in <strong>Blood Cancer Journal</strong>."
-  - date: "2025"
-    content: "Gave an oral presentation on neonatal T2w → T1w synthesis with latent diffusion at <strong>IEEE AIxMHC 2025</strong>."
-  - date: "Feb 2024"
-    content: "Joined the Big Data Team at PIPET, The Catholic University of Korea, as a Data Scientist."
-  - date: "Apr 2023"
-    content: "My first-author paper on functional gradients in migraine is published in <strong>Human Brain Mapping</strong>."
-  - date: "Feb 2023"
-    content: "Received my M.S. in Statistics from Inha University and joined the Medical Statistics Support Center at Inha University Hospital."
-
 experience:
   - when: "Feb 2024 – present"
     what: "Data Scientist"
@@ -40,11 +23,6 @@ education:
   - when: "2021 – 2023"
     what: "M.S. in Statistics"
     where: "Inha University"
-    detail: >-
-      Research: machine learning and neuroscience. Teaching assistant for
-      Programming Languages, Data Structures, Introductory Statistics I,
-      Introduction to Data Science, Object-Oriented Programming, and
-      Statistical Analysis Methods &amp; Data Mining.
   - when: "2016 – 2021"
     what: "B.S. in Statistics"
     where: "Inha University"
@@ -66,6 +44,6 @@ skills:
 
 languages:
   - name: English
-    level: "TOEIC Speaking IH · TOEFL 88"
+    level: "TOEFL 4.5"
   - name: Korean
     level: "Native"

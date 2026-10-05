@@ -16,21 +16,9 @@
 {{ .Content }}
 </div>
 
-<p class="contact-line">Email: <em>chaehyun3253 (at) gmail (dot) com</em> &nbsp;·&nbsp; <a href="{{ site.Params.author.cv | relURL }}">Curriculum Vitae</a> &nbsp;·&nbsp; <a href="{{ site.Params.korPath | relURL }}" lang="ko">한국어 버전</a></p>
+<p class="contact-line">Email: <a href="mailto:{{ site.Params.author.email }}">{{ site.Params.author.email }}</a> &nbsp;·&nbsp; <a href="{{ site.Params.author.cv | relURL }}">Curriculum Vitae</a></p>
 
-<h2>news</h2>
-<div class="news">
-  <table>
-    {{- range $cv.news }}
-    <tr>
-      <td class="news__date">{{ .date }}</td>
-      <td class="news__content">{{ .content | safeHTML }}</td>
-    </tr>
-    {{- end }}
-  </table>
-</div>
-
-<h2>selected publications &amp; presentations</h2>
+<h2>Publications</h2>
 {{ partial "project-list.html" (where hugo.Data.projects.items "selected" true) }}
 <p><a href="{{ "projects/" | relURL }}">See all projects →</a></p>
 

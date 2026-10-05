@@ -4,7 +4,7 @@
 # Build:  hugo --source en
 # Local:  hugo server --source en
 #
-# Content lives mostly in data/*.yaml (projects, notes, news, cv entries);
+# Content lives mostly in data/*.yaml (projects, cv entries; notes.yaml only feeds redirects);
 # the about-page bio is in content/_index.md.
 
 baseURL: 'https://chaeniverse.github.io/'
@@ -26,7 +26,7 @@ params:
   korPath: '/kor/'
   author:
     name: 'Chaehyeon Lee'
-    email: 'chaehyun3253@gmail.com'
+    email: 'chaehyun3253@catholic.ac.kr'
     github: 'chaeniverse'
     linkedin: '%EC%B1%84%ED%98%84-%EC%9D%B4-65a65221b'
     cv: '/uploads/resume.pdf'
@@ -39,9 +39,6 @@ menus:
     - name: projects
       pageRef: /projects
       weight: 20
-    - name: notes
-      pageRef: /blog
-      weight: 30
     - name: cv
       url: /uploads/resume.pdf
       weight: 40

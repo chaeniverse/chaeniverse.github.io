@@ -1,4 +1,3 @@
-{{- $kor := site.Params.korPath }}
 <div class="pub-list">
   {{- range . }}
   {{- $bundle := printf "kor-projects/%s/" .slug }}
@@ -19,11 +18,9 @@
       {{- with .authors }}<p class="pub__authors">{{ . | safeHTML }}</p>{{ end }}
       {{- with .venue }}<p class="pub__venue">{{ . | safeHTML }}</p>{{ end }}
       {{- with .note }}<p class="pub__note">({{ . }})</p>{{ end }}
-      {{- with .summary }}<p class="pub__summary">{{ . | safeHTML }}</p>{{ end }}
       <div class="pub__links">
         {{- range .links }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}
         {{- with .pdf }}{{ with resources.Get (printf "%s%s" $bundle .) }}<a href="{{ .RelPermalink }}">pdf</a>{{ end }}{{ end }}
-        <a href="{{ printf "%sprojects/%s/" $kor .slug | relURL }}" lang="ko" title="Detailed write-up (in Korean)">write-up (KR)</a>
       </div>
     </div>
   </div>

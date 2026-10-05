@@ -6,7 +6,7 @@
       {{- range site.Menus.main }}
       <a href="{{ .URL }}"{{ if or ($current.IsMenuCurrent "main" .) (and .Page (eq .Page $current)) }} class="is-active"{{ end }}>{{ .Name }}</a>
       {{- end }}
-      <a class="site-nav__lang" href="{{ site.Params.korPath | relURL }}" lang="ko" title="한국어 버전">한국어</a>
+      <a class="site-nav__lang" href="{{ site.Params.korPath | relURL }}" lang="ko" title="한국어 버전">KOR</a>
       <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
     </div>
   </div>
