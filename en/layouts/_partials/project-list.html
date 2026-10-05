@@ -1,0 +1,31 @@
+{{- $kor := site.Params.korPath }}
+<div class="pub-list">
+  {{- range . }}
+  {{- $bundle := printf "kor-projects/%s/" .slug }}
+  <div class="pub" id="{{ .slug }}">
+    <div class="pub__thumb">
+      {{- $img := "" }}
+      {{- with .image }}{{ $img = resources.Get (printf "%s%s" $bundle .) }}{{ end }}
+      {{- with $img }}
+        {{- $thumb := .Fit "480x300 webp" }}
+        <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">
+      {{- else }}
+        <div class="pub__placeholder" aria-hidden="true"><i class="fa-solid {{ .icon | default "fa-flask" }}"></i></div>
+      {{- end }}
+      {{- with .badge }}<span class="pub__badge">{{ . }}</span>{{ end }}
+    </div>
+    <div class="pub__body">
+      <p class="pub__title">{{ .title | safeHTML }}</p>
+      {{- with .authors }}<p class="pub__authors">{{ . | safeHTML }}</p>{{ end }}
+      {{- with .venue }}<p class="pub__venue">{{ . | safeHTML }}</p>{{ end }}
+      {{- with .note }}<p class="pub__note">({{ . }})</p>{{ end }}
+      {{- with .summary }}<p class="pub__summary">{{ . | safeHTML }}</p>{{ end }}
+      <div class="pub__links">
+        {{- range .links }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}
+        {{- with .pdf }}{{ with resources.Get (printf "%s%s" $bundle .) }}<a href="{{ .RelPermalink }}">pdf</a>{{ end }}{{ end }}
+        <a href="{{ printf "%sprojects/%s/" $kor .slug | relURL }}" lang="ko" title="Detailed write-up (in Korean)">write-up (KR)</a>
+      </div>
+    </div>
+  </div>
+  {{- end }}
+</div>

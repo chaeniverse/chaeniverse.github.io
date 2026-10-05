@@ -1,0 +1,65 @@
+# English site — served at the root (https://chaeniverse.github.io/).
+# The Korean HugoBlox site in the repository root is served under /kor/.
+#
+# Build:  hugo --source en
+# Local:  hugo server --source en
+#
+# Content lives mostly in data/*.yaml (projects, notes, news, cv entries);
+# the about-page bio is in content/_index.md.
+
+baseURL: 'https://chaeniverse.github.io/'
+title: 'Chaehyeon Lee'
+locale: en-us
+defaultContentLanguage: en
+disableKinds: [taxonomy, term, rss]
+enableRobotsTXT: false
+publishDir: ../public
+
+params:
+  description: 'Data Scientist working on healthcare big data, causal inference, survival analysis, and the evaluation of generative AI.'
+  subtitle: 'Data Scientist, Big Data Team, PIPET, The Catholic University of Korea'
+  # Path under static/ to a profile photo (e.g. assets/img/avatar.jpg).
+  # Leave empty to show an initials monogram instead.
+  avatar: ''
+  # Prefix of the Korean site; old /projects/<slug>/ and /blog/<slug>/
+  # URLs redirect here.
+  korPath: '/kor/'
+  author:
+    name: 'Chaehyeon Lee'
+    email: 'chaehyun3253@gmail.com'
+    github: 'chaeniverse'
+    linkedin: '%EC%B1%84%ED%98%84-%EC%9D%B4-65a65221b'
+    cv: '/uploads/resume.pdf'
+
+menus:
+  main:
+    - name: about
+      pageRef: /
+      weight: 10
+    - name: projects
+      pageRef: /projects
+      weight: 20
+    - name: notes
+      pageRef: /blog
+      weight: 30
+    - name: cv
+      url: /uploads/resume.pdf
+      weight: 40
+
+# Project thumbnails and PDFs are read straight from the Korean site's
+# page bundles, so images are never duplicated in the repository.
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: ../content/projects
+      target: assets/kor-projects
+      files: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.pdf']
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+sitemap:
+  changeFreq: monthly

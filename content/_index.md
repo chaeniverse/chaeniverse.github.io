@@ -29,7 +29,7 @@ sections:
           url: "#projects"
           icon: arrow-down
         - text: Download CV
-          url: /uploads/resume.pdf
+          url: uploads/resume.pdf
           icon: arrow-down-tray
         - text: Get In Touch
           url: "#contact"

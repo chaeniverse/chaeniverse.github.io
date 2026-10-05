@@ -1,0 +1,15 @@
+{{- $kor := site.Params.korPath }}
+{{- range hugo.Data.notes.groups }}
+<h2>{{ .title }}</h2>
+<ul class="entry-list note-list">
+  {{- range .items }}
+  <li id="{{ .slug }}">
+    <span class="entry__when">{{ time.Format "Jan 2006" .date }}</span>
+    <p class="entry__what">
+      <a href="{{ printf "%sblog/%s/" $kor .slug | relURL }}" lang="ko"><strong>{{ .title }}</strong></a>
+      <span class="entry__detail">{{ .summary }}</span>
+    </p>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}

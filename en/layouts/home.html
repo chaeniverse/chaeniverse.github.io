@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{- $cv := hugo.Data.cv }}
+<h1 class="page__title">{{ site.Params.author.name }}</h1>
+<p class="page__subtitle">{{ site.Params.subtitle }}</p>
+
+<div class="profile">
+  {{- with site.Params.avatar }}
+  <img src="{{ . | relURL }}" alt="{{ site.Params.author.name }}">
+  {{- else }}
+  <div class="profile__monogram" role="img" aria-label="{{ site.Params.author.name }}">CL</div>
+  {{- end }}
+  {{ partial "social.html" . }}
+</div>
+
+<div class="about-body">
+{{ .Content }}
+</div>
+
+<p class="contact-line">Email: <em>chaehyun3253 (at) gmail (dot) com</em> &nbsp;·&nbsp; <a href="{{ site.Params.author.cv | relURL }}">Curriculum Vitae</a> &nbsp;·&nbsp; <a href="{{ site.Params.korPath | relURL }}" lang="ko">한국어 버전</a></p>
+
+<h2>news</h2>
+<div class="news">
+  <table>
+    {{- range $cv.news }}
+    <tr>
+      <td class="news__date">{{ .date }}</td>
+      <td class="news__content">{{ .content | safeHTML }}</td>
+    </tr>
+    {{- end }}
+  </table>
+</div>
+
+<h2>selected publications &amp; presentations</h2>
+{{ partial "project-list.html" (where hugo.Data.projects.items "selected" true) }}
+<p><a href="{{ "projects/" | relURL }}">See all projects →</a></p>
+
+<h2>experience</h2>
+{{ partial "entry-list.html" $cv.experience }}
+
+<h2>education</h2>
+{{ partial "entry-list.html" $cv.education }}
+
+<h2>skills</h2>
+<ul class="entry-list">
+  {{- range $cv.skills }}
+  <li>
+    <span class="entry__when">{{ .name }}</span>
+    <ul class="tag-row">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+  </li>
+  {{- end }}
+  <li>
+    <span class="entry__when">spoken languages</span>
+    <p class="entry__what">{{ range $i, $l := $cv.languages }}{{ if $i }} &nbsp;·&nbsp; {{ end }}<strong>{{ $l.name }}</strong> <span class="text-muted">({{ $l.level }})</span>{{ end }}</p>
+  </li>
+</ul>
+
+<h2>research interests</h2>
+<ul class="tag-row">
+  {{- range $cv.interests }}<li>{{ . }}</li>{{ end }}
+</ul>
+{{ end }}

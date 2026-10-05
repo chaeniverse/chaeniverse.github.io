@@ -1,0 +1,14 @@
+{{- $to := .Params.redirect | relURL -}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }} | {{ site.Title }}</title>
+    <link rel="canonical" href="{{ .Params.redirect | absURL }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ $to }}">
+  </head>
+  <body>
+    <p>This page has moved to <a href="{{ $to }}">{{ $to }}</a>.</p>
+  </body>
+</html>

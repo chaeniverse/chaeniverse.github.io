@@ -100,4 +100,4 @@ Train 안에서 **10-fold stratified CV**:
 
 > 원문: <https://chaeniverse.tistory.com/81>
 >
-> 이 워크플로를 적용한 실제 프로젝트는 [OvaRisk-ML](/projects/ovarisk-ml/) 참고.
+> 이 워크플로를 적용한 실제 프로젝트는 [OvaRisk-ML](../../projects/ovarisk-ml/) 참고.

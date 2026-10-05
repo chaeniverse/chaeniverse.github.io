@@ -1,0 +1,8 @@
+<ul class="entry-list">
+  {{- range . }}
+  <li>
+    <span class="entry__when">{{ .when }}</span>
+    <p class="entry__what"><strong>{{ .what }}</strong><span class="entry__meta">{{ .where }}</span>{{ with .detail }}<span class="entry__detail">{{ . | safeHTML }}</span>{{ end }}</p>
+  </li>
+  {{- end }}
+</ul>

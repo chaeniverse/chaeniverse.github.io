@@ -1,0 +1,9 @@
+{{- $items := hugo.Data.projects.items }}
+{{- range hugo.Data.projects.groups }}
+  {{- $group := where $items "group" .id }}
+  {{- if $group }}
+  <h2>{{ .title }}</h2>
+  {{ with .note }}<p class="section-note">{{ . }}</p>{{ end }}
+  {{ partial "project-list.html" $group }}
+  {{- end }}
+{{- end }}

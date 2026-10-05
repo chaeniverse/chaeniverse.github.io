@@ -1,0 +1,10 @@
+{{/* The theme opens every absolute-URL menu link in a new tab. The "English"
+     link points to this same site (the English version at the domain root),
+     so open it in the same tab instead. */}}
+<script>
+  document.querySelectorAll('a[href="https://chaeniverse.github.io/"]').forEach(function (a) {
+    a.removeAttribute('target');
+    a.removeAttribute('rel');
+    a.setAttribute('hreflang', 'en');
+  });
+</script>
